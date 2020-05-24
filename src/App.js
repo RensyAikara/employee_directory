@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/Container';
+import employees from "./employees.json";
+// import Header from './components/Header';
+// import SearchArea from './components/SearchArea';
+// import EmployeeDetails from './components/EmployeeDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function App() {
+//   return (
+//     <div className="App">
+//       <Container />
+//       {/* <Header />
+//       <SearchArea />
+//       <EmployeeDetails /> */}
+//     </div>
+//   );
+// }
+
+class App extends React.Component {
+  state={
+    employees: employees
+  }
+
+  render(){
+    return (
+          <div className="App">
+            <Container employees={this.state.employees} />
+            {/* <Header />
+            <SearchArea />
+            <EmployeeDetails /> */}
+          </div>
+        );
+  }
 }
+
 
 export default App;

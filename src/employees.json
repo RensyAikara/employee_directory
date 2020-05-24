@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Nina John",
+        "email": "nina.john@testmail.com",
+        "role": "Manager",
+        "department": "IT"
+    },
+    {
+        "id": 2,
+        "name": "Amelia Kyle",
+        "email": "amelia.kyle@testmail.com",
+        "role": "Manager",
+        "department": "HR"
+    },
+    {
+        "id": 3,
+        "name": "Olivia Charlotte",
+        "email": "olivia.charlotte@testmail.com",
+        "role": "Assistant HR Manager",
+        "department": "Product Development"
+    },
+    {
+        "id": 4,
+        "name": "Sophia Mia",
+        "email": "sophia.mia@testmail.com",
+        "role": "Financial Accountant",
+        "department": "Accounts and Finance"
+    },
+    {
+        "id": 5,
+        "name": "Melissa Pedro",
+        "email": "melissa.pedro@testmail.com",
+        "role": "Sales Development Rep",
+        "department": "Sales"
+    },
+    {
+        "id": 6,
+        "name": "Cory Ken",
+        "email": "cory.ken@testmail.com",
+        "role": "Network Administrator",
+        "department": "IT"
+    },
+    {
+        "id": 7,
+        "name": "Lucas Chase",
+        "email": "lucas.chase@testmail.com",
+        "role": "Applications Specialist",
+        "department": "HR"
+    }
+
+]
