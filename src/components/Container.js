@@ -18,10 +18,8 @@ class Container extends Component{
 
     handleInputChange = event => {
         const search = event.target.value;
-        // console.log(this.state.employeesFiltered);
         const employeestyped = this.state.employeesFiltered.filter(employee => employee.name.toLowerCase().indexOf(search.toLowerCase()) > -1);
         console.log(employeestyped);
-        // this.setState({employeesFiltered});
         this.setState({employees: employeestyped, search:search});
         console.log(this.state.search);
         
@@ -35,7 +33,6 @@ class Container extends Component{
         else{
             const employeestyped = this.state.employeesFiltered.filter(employee => employee.name.toLowerCase().includes(this.state.search.toLowerCase()));
             this.setState({employees: employeestyped, search: ""});
-            // console.log(employeestyped);
             if(employeestyped == ""){
                 alert("Invalid name");
             }
@@ -116,7 +113,6 @@ class Container extends Component{
             <div className="container-fluid">
                 <Header />
                 <SearchArea employee={this.state.employees} handleSubmit= {this.handleSubmit} handleInputChange= {this.handleInputChange} />
-                {/* <SearchArea employee={this.props} handleSubmit= {this.handleSubmit} handleInputChange= {this.handleInputChange} /> */}
                 <EmployeeDetails employee={this.state.employees} sortbyName={this.sortbyName} sortbyEmail={this.sortbyEmail} sortbyRole={this.sortbyRole} sortbyDepartment={this.sortbyDepartment} employeesFiltered={this.state.employeesFiltered} />
             </div>
           );

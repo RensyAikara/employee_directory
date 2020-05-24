@@ -12,21 +12,6 @@ class SearchArea extends Component{
                   value = {this.props.employees}
                   onChange={this.props.handleInputChange}
                 />
-
-                {/* <select value = {this.props.employees} onChange={this.props.handleInputChange}>
-                    <option>Search by name...</option>
-                    {this.props.employee.map(eachemployee => {
-                        return <option value={eachemployee.name} key={eachemployee.id}></option>
-                    })}
-                </select> */}
-
-                {/* <select className="custom-select"  id="inputGroupSelect01" onChange={this.props.handleInputChange} >
-                    <option value="DEFAULT" disabled>Search by name...</option>
-                    {this.props.employee.map(eachemployee => {
-                        // console.log(eachemployee.name);
-                        return <option value={eachemployee.name} key={eachemployee.id} style={{color: 'black'}}></option>
-                    })}
-                </select> */}
                 <button 
                  type="submit"
                  value="Submit"
